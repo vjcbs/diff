@@ -10,7 +10,7 @@ html {
 
 body {
   @include reset-mp;
-  @include set-font($size: 16px);
+  @include font($size: 16px);
 }
 
 .wrapper {
@@ -24,11 +24,14 @@ body {
   }
 }
 
-.main-title {
-  @include heading;
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }
 
-.site-list {
-  @include flex-column;
-  @include list-reset;
+.line-through {
+  text-decoration: line-through;
 }

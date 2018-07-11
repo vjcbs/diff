@@ -1,0 +1,16 @@
+.about {
+  padding: 20px 30px;
+  background-color: $lightgray;
+
+  .about__title {
+    @include font($name: $bold-font, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .about__img-wrapper {
+
+  }
+}

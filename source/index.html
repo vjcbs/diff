@@ -10,27 +10,28 @@
 </head>
 <body>
   <header class="header">
+    <div class="header__background"></div>
     <div class="header__brand">
-      <span class="header__brand-span">Diff</span>
+
     </div>
     <div class="header__jumbo">
       <div class="header__title-wrapper">
-        <h1 class="header__title"></h1>
+        <h1 class="header__title"><b>A</b> <span class="line-through">not so</span> <b>different</b> <span class="visually-hidden">folio</span></h1>
         <span class="header__title-part">folio</span>
       </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link">About</a>
+            <a class="header__nav-link" href="#">About</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link">Work</a>
+            <a class="header__nav-link" href="#">Work</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link">Blog</a>
+            <a class="header__nav-link" href="#">Blog</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link">Contact</a>
+            <a class="header__nav-link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -62,40 +63,62 @@
       <img class="about__img" src="http://via.placeholder.com/260x150" />
     </div>
     <p class="about__text">
-      Lorem ipsum dolor sit amet
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore texercitation ullamco laboris nisi
+      ut aliquip ex ea commodo consequat.
     </p>
   </section>
 
   <section class="works">
-    <div class="title__wrapper">
-      <h2 class="title__top">Check this out!</h2>
+    <div class="title">
+      <h2 class="title__top">Check <span class="visually-hidden">this out!</span></h2>
       <span class="title__part">This out!</span>
     </div>
     <div class="works__gallery">
       <ul class="works__list">
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="http://via.placeholder.com/260x150" />
+            <img class="works__img" src="img/img-heclem.png" />
+            <div class="works__img-desc">
+              <span class="works__desc-name">Heclem Magazine</span>
+              <span class="works__desc-type">EDITORIAL DESIGN</span>
+            </div>
           </div>
         </li>
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="http://via.placeholder.com/260x150" />
+            <img class="works__img" src="img/img-altj.png" />
+            <div class="works__img-desc">
+              <span class="works__desc-name">Alt-J Fall Tour</span>
+              <span class="works__desc-type">GRAPHIC DESIGN</span>
+            </div>
           </div>
         </li>
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="http://via.placeholder.com/260x150" />
+            <img class="works__img" src="img/img-elegant.png" />
+            <div class="works__img-desc">
+              <span class="works__desc-name">Elegant Theme</span>
+              <span class="works__desc-type">WEB DESIGN</span>
+            </div>
           </div>
         </li>
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="http://via.placeholder.com/260x150" />
+            <img class="works__img" src="img/img-magazine.png" />
+            <div class="works__img-desc">
+              <span class="works__desc-name">Magazine</span>
+              <span class="works__desc-type">EDITORIAL DESIGN</span>
+            </div>
           </div>
         </li>
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="http://via.placeholder.com/260x150" />
+            <img class="works__img" src="img/img-argo.png" />
+            <div class="works__img-desc">
+              <span class="works__desc-name">Argo</span>
+              <span class="works__desc-type">BRANDING</span>
+            </div>
           </div>
         </li>
       </ul>
@@ -104,9 +127,9 @@
   </section>
 
   <section class="clients">
-    <div class="title__wrapper">
-      <h2 class="title__top">Check this out!</h2>
-      <span class="title__part">This out!</span>
+    <div class="title">
+      <h2 class="title__top">Our <span class="visually-hidden">clients!</span></h2>
+      <span class="title__part">Clients!</span>
     </div>
     <div class="clients__gallery">
       <ul class="clients__list">
@@ -131,7 +154,7 @@
 
   <section class="blog">
     <div class="title">
-      <h2 class="title__top">The blog!</h2>
+      <h2 class="title__top">The <span class="visually-hidden">blog!</span></h2>
       <span class="title__part">Blog!</span>
     </div>
 
@@ -144,7 +167,9 @@
           <time class="blog__post-time" datetime="2018-07-07">7 July 2018</time>
           <h3 class="blog__post-title">Ain't no rest for the wicked</h3>
           <p class="blog__post-text">
-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore texercaitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
           </p>
           <a class="blog__post-link">Open Post</a>
         </div>
@@ -157,7 +182,9 @@
           <time class="blog__post-time" datetime="2018-07-07">7 July 2018</time>
           <h3 class="blog__post-title">Ain't no rest for the wicked</h3>
           <p class="blog__post-text">
-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore texercaitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
           </p>
           <a class="blog__post-link">Open Post</a>
         </div>
@@ -168,7 +195,7 @@
 
   <section class="contact">
     <div class="title">
-      <h2 class="title__top">Get in touch!</h2>
+      <h2 class="title__top">Get in <span class="visually-hidden">touch!</span></h2>
       <span class="title__part">Touch!</span>
     </div>
 
@@ -212,6 +239,13 @@
     <a class="footer__link">www.tiagonarciso.com</a>
     <span class="footer__copyright">©2015 Tiago Narciso</span>
   </footer>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="js/animations.js"></script>
 
 </body>
 </html>

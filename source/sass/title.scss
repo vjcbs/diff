@@ -1,0 +1,19 @@
+.title {
+  // @include border;
+  // @include font($name: $bold-font, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+
+  .title__top {
+    margin: 0;
+    // font: inherit;
+    @include font($name: $bold-font, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
+  }
+
+  .title__part {
+    // font: inherit;
+    @include font($name: $extrabold, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
+    font-weight: 700;
+  }
+}

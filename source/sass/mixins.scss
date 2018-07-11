@@ -9,26 +9,14 @@
   padding: 0;
 }
 
-@mixin set-font($size: 16px, $color: black, $lh: 24px) {
-  font-family: $regular-font, "Helvetica", "Arial", sans-serif;
+@mixin font($name: $regular-font, $size: 16px, $color: $text-color, $lh: 25px) {
+  font-family: $name, "Helvetica", "Arial", sans-serif;
   font-size: $size;
   color: $color;
   line-height: $lh;
 }
 
-@mixin set-font-bold($size: 17px, $color: black, $lh: 24px) {
-  font-family: $bold-font, "Helvetica", "Arial", sans-serif;
-  font-size: $size;
-  color: $color;
-  line-height: $lh;
-}
-
-@mixin heading($size: 25px, $lh: 30px) {
-  @include set-font-bold($size: $size, $lh: $lh);
-  @include reset-mp;
-}
-
-@mixin list-reset {
+@mixin reset-list {
   @include reset-mp;
   list-style: none;
 }
@@ -60,8 +48,8 @@
   border-top: 1px solid $color;
 }
 
-@mixin reset-link {
-  color: black;
+@mixin reset-link($color: black) {
+  color: $color;
   text-decoration: none;
 }
 
@@ -72,4 +60,16 @@
 
 @mixin border($color: black) {
   border: 1px solid $color;
+}
+
+@mixin long-dash($width: 80px) {
+  @include pseudo;
+  width: $width;
+  border-top: 1px solid black;
+}
+
+@mixin short-dash($width: 25px) {
+  @include pseudo;
+  width: $width;
+  border-top: 2px solid $woody;
 }

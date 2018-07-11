@@ -1,0 +1,18 @@
+.blog {
+  // @include border;
+  padding: 20px 30px;
+
+  .blog__posts {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog__post {
+    margin-bottom: 30px;
+  }
+
+  .blog__more-link {
+    // @include border;
+  }
+}

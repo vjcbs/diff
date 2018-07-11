@@ -1,0 +1,14 @@
+.social {
+  color: white;
+
+  .social-list {
+    @include reset-list;
+    @include flex-row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .social-item {
+    margin: 5px;
+  }
+}
