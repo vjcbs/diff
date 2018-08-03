@@ -9,6 +9,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- <div class="container">
+  <svg width="150" height="75">
+    <g id="waves">
+      <path class="wave" id="wave1" fill="none" stroke="#7AA20D" stroke-width="2">
+      </path>
+      <path class="wave" id="wave2" fill="none" stroke="#7AA20D" stroke-width="2">
+      </path>
+      <path class="wave" id="wave3" fill="none" stroke="#7AA20D" stroke-width="2">
+      </path>
+    </g>
+  </svg>
+
+  </div> -->
   <header class="header">
     <div class="header__background"></div>
     <div class="header__brand">
@@ -59,14 +72,16 @@
 
   <section class="about">
     <h2 class="about__title">Hey!</h2>
-    <div class="about__img-wrapper">
-      <img class="about__img" src="http://via.placeholder.com/260x150" />
+    <div class="about__content">
+      <div class="about__img-wrapper">
+        <img class="about__img" src="img/img-about.jpg" />
+      </div>
+      <p class="about__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore texercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.
+      </p>
     </div>
-    <p class="about__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore texercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequat.
-    </p>
   </section>
 
   <section class="works">
@@ -75,6 +90,37 @@
       <span class="title__part">This out!</span>
     </div>
     <div class="works__gallery">
+      <svg class="works__svg" id="wavesSVG" width="150" height="75">
+        <g id="waves">
+          <path class="wave" id="wave1" fill="none" stroke="#7AA20D" stroke-width="2">
+          </path>
+          <path class="wave" id="wave2" fill="none" stroke="#7AA20D" stroke-width="2">
+          </path>
+          <path class="wave" id="wave3" fill="none" stroke="#7AA20D" stroke-width="2">
+          </path>
+        </g>
+      </svg>
+      <svg class="works__svg" id="lineSVG" width="80" height="80">
+        <g id="line">
+          <line x1="0" y1="0" x2="80" y2="80" stroke="#222222" stroke-width="3"/>
+        </g>
+      </svg>
+      <svg class="works__svg" id="birdSVG" width="180" height="200">
+    		<g class="bird">
+    			<polyline id="line1" points="50,50 100,50 150,50" fill="none" stroke="#222222" stroke-width="3">
+    				<animate id="forward1"  begin="0;back1.end" attributeName="points" dur="2s" values="50,40 100,50 150,40; 50,90 100,50 150,90" calcMode="spline" keySplines=".34,.08,.17,1.25" />
+    				<animate id="back1" attributeName="points" dur="2s" begin="forward1.end" values="50,90 100,50 150,90; 50,40 100,50 150,40" calcMode="spline" keySplines=".32,.49,.73,1.14" />
+    			</polyline>
+    			<polyline id="line2" points="50,70 100,70 150,70" fill="none" stroke="#222222" stroke-width="3">
+    				<animate id="forward2"  begin="0;back2.end" attributeName="points" dur="2s" values="50,60 100,70 150,60;50,110 100,70 150,110" calcMode="spline" keySplines=".34,.08,.17,1.25"/>
+    				<animate id="back2" attributeName="points" dur="2s" begin="forward1.end" from="50,100 100,70 150,100" to="50,60 100,70 150,60" values="50,110 100,70 150,110; 50,60 100,70 150,60" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+    			</polyline>
+    			<polyline id="line3" points="50,90 100,90 150,90" fill="none" stroke="#222222" stroke-width="3">
+    				<animate id="forward3"  begin="0;back3.end" attributeName="points" dur="2s" values="50,80 100,90 150,80;50,130 100,90 150,130" calcMode="spline" keySplines=".34,.08,.17,1.25"/>
+    				<animate id="back3" attributeName="points" dur="2s" begin="forward2.end" values="50,130 100,90 150,130; 50,80 100,90 150,80" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+    			</polyline>
+    		</g>
+      </svg>
       <ul class="works__list">
         <li class="works__item">
           <div class="works__img-wrapper">
@@ -134,18 +180,31 @@
     <div class="clients__gallery">
       <ul class="clients__list">
         <li class="clients__item">
-          <div class="clients__img-wrapper">
-            <img class="clients__img" src="http://via.placeholder.com/260x150" />
+          <div class="clients__img-wrapper clients__img-wrapper--microsoft">
+            <img class="clients__img" src="img/ic-microsoft.png" />
           </div>
         </li>
         <li class="clients__item">
-          <div class="clients__img-wrapper">
-            <img class="clients__img" src="http://via.placeholder.com/260x150" />
+          <div class="clients__img-wrapper clients__img-wrapper--twitter">
+            <img class="clients__img" src="img/ic-twitter.png" />
+          </div>
+          <div class="clients__img-wrapper clients__img-wrapper--apple">
+            <img class="clients__img" src="img/ic-apple.png" />
           </div>
         </li>
         <li class="clients__item">
-          <div class="clients__img-wrapper">
-            <img class="clients__img" src="http://via.placeholder.com/260x150" />
+          <div class="clients__img-wrapper clients__img-wrapper--behance">
+            <img class="clients__img" src="img/ic-behance.png" />
+          </div>
+        </li>
+        <li class="clients__item">
+          <div class="clients__img-wrapper clients__img-wrapper--evernote">
+            <img class="clients__img" src="img/ic-evernote.png" />
+          </div>
+        </li>
+        <li class="clients__item">
+          <div class="clients__img-wrapper clients__img-wrapper--google">
+            <img class="clients__img" src="img/ic-google.png" />
           </div>
         </li>
       </ul>
@@ -159,9 +218,9 @@
     </div>
 
     <div class="blog__posts">
-      <article class="blog__post">
+      <article class="blog__post blog__post--horizontal-img">
         <div class="blog__post-img-wrapper">
-          <img class="blog__post-img" src="http://via.placeholder.com/260x150" />
+          <img class="blog__post-img" src="img/img-blog-1.jpg" />
         </div>
         <div class="blog__post-body">
           <time class="blog__post-time" datetime="2018-07-07">7 July 2018</time>
@@ -174,13 +233,13 @@
           <a class="blog__post-link">Open Post</a>
         </div>
       </article>
-      <article class="blog__post">
+      <article class="blog__post blog__post--vertical-img">
         <div class="blog__post-img-wrapper">
-          <img class="blog__post-img" src="http://via.placeholder.com/260x150" />
+          <img class="blog__post-img" src="img/img-blog-2.jpg" />
         </div>
         <div class="blog__post-body">
-          <time class="blog__post-time" datetime="2018-07-07">7 July 2018</time>
-          <h3 class="blog__post-title">Ain't no rest for the wicked</h3>
+          <time class="blog__post-time" datetime="2018-07-07">4 June 2018</time>
+          <h3 class="blog__post-title">Money don't grow on trees</h3>
           <p class="blog__post-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore texercaitation ullamco laboris nisi
@@ -245,6 +304,8 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
+  <script src="js/test.js"></script>
+  <script src="js/figures.js"></script>
   <script src="js/animations.js"></script>
 
 </body>

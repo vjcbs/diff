@@ -1,3 +1,13 @@
+.container {
+  width: 50%;
+  height: 200px;
+}
+
+svg {
+	// width: 100%;
+	// height: 100%;
+}
+
 .header {
   position: relative;
   min-height: 100vh;
@@ -17,13 +27,13 @@
     background-position: top 0 center;
     background-size: cover;
     z-index: -1;
-    opacity: 0.26;
+    opacity: 0.4;
   }
 
   .header__brand {
     height: 70px;
     width: 70px;
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-bottom: 50px;
     margin-bottom: 10vh;
     background: url("../img/ic-header-logo.png") no-repeat;
@@ -76,7 +86,7 @@
     @include reset-list;
     @include flex-row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 80%;
     margin: 0 auto;
@@ -89,6 +99,7 @@
   .header__nav-item {
     margin: 10px;
     flex-basis: 40%;
+    text-align: center;
   }
 
   .header__nav-link {
@@ -96,10 +107,12 @@
     font-family: $semibold, sans-serif;
     color: white;
     text-transform: uppercase;
+    // text-align: center;
+    // @include border(yellow);
   }
 }
 
-@media (min-width: 480px) and (orientation: landscape) {
+@media (min-width: 480px), (orientation: landscape) {
   .header {
     .header__jumbo {
       @include flex-row;
@@ -110,8 +123,8 @@
     .header__title-wrapper {
       @include flex-row;
       flex-wrap: wrap;
-      align-items: center;
-      // flex-basis: 40%;
+      // align-items: center;
+      flex-basis: 40%;
       margin: 0;
       // @include border(gold);
     }
@@ -144,7 +157,6 @@
 
     .header__jumbo {
       justify-content: space-between;
-      padding: 0 15px;
     }
 
     .header__title-wrapper {
@@ -178,15 +190,23 @@
 
 @media (min-width: 768px) {
   .header {
-    padding: 50px 75px;
+    padding: 50px 100px;
+    min-height: auto;
 
     .header__jumbo {
-      padding: 0 50px;
+      // padding: 0 50px;
+      // max-width: 800px;
+      // @include border(gold);
+      margin-bottom: 160px;
     }
 
     .header__title-wrapper {
       font-size: $h1-sz * 0.8;
       line-height: 42px;
+      flex-basis: 50%;
+      // @include border(blue);
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
     .header__title-part {
@@ -200,6 +220,87 @@
         border: 2px solid white;
         transform: translateY(-1px);
       }
+    }
+
+    .header__nav {
+      flex-basis: 100%;
+      justify-content: flex-end;
+      align-items: flex-start;
+      // @include border;
+    }
+
+    .header__nav-list {
+      // @include border(tomato);
+      // padding: 20px;
+      // justify-content: flex-end;
+      align-items: flex-start;
+      margin: 0;
+      // margin-left: 100px;
+    }
+
+    .header__nav-item {
+      margin: 20px 0;
+    }
+
+    .header__nav-link {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    padding: 50px 200px;
+
+    .header__brand {
+      margin-bottom: 160px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .header {
+    padding: 50px 225px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    .header__jumbo {
+      // max-width: 100%;
+      @include border;
+    }
+
+    .header__title-wrapper {
+      font-size: $h1-sz;
+      line-height: 56px;
+      @include border(tomato);
+    }
+
+    .header__title-part {
+      margin-left: 112px;
+
+      &::before {
+        width: 113.5px;
+        height: 3px;
+        top: 25px;
+        left: -110px;
+        border: 2.5px solid white;
+
+      }
+    }
+
+    .header__nav {
+      @include border(blue);
+    }
+
+    .header__nav-list {
+      @include border(gold);
+      align-items: flex-end;
+    }
+
+    .header__nav-item {
+      margin: 30px 0;
+      flex-basis: 50%;
+      @include border(green);
     }
   }
 }

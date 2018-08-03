@@ -10,6 +10,11 @@
     text-align: center;
   }
 
+  .works__svg {
+    position: absolute;
+    display: none;
+  }
+
   .works__list {
     @include reset-list;
     @include flex-column;
@@ -51,6 +56,8 @@
 
 @media (min-width: 768px) {
   .works {
+    padding: 30px 50px;
+
     .works__list {
       flex-direction: row;
       flex-wrap: wrap;
@@ -81,7 +88,9 @@
 
 @media (min-width: 1250px) {
   .works {
-    padding: 50px 200px;
+    padding: 150px 225px;
+    margin: 0 auto;
+    max-width: 1600px;
     @include border;
 
     .works__gallery {
@@ -90,6 +99,36 @@
       width: 100%;
       max-width: 1200px;
       background-color: #bcbcbc;
+    }
+
+    .works__svg {
+      display: block;
+      // @include border;
+    }
+
+    #wavesSVG {
+      top: -30px;
+      left: 10%;
+    }
+
+    #lineSVG {
+      top: 54%;
+      left: 12%;
+      // @include border;
+      transform-origin: center;
+      animation: rotation 2.5s linear infinite;
+    }
+
+    #birdSVG {
+      top: 32%;
+      right: 70px;
+      // @include border;
+    }
+
+    #lines {
+      transform-origin: 100px 70px;
+      // animation: skew-rotate 4s ease-out infinite;
+      animation: skew-bird 4s ease-out infinite;
     }
 
     .works__list {

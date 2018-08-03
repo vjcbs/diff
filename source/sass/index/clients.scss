@@ -4,5 +4,159 @@
 
   .clients__list {
     @include reset-list;
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .clients__gallery {
+    @include border(tomato);
+    width: 100%;
+  }
+
+  .clients__item {
+    @include flex-row;
+    justify-content: space-between;
+    // align-items: center;
+    // @include border(blue);
+    margin: 10px;
+  }
+
+  .clients__img {
+    max-width: 100%;
+  }
+
+  .clients__img-wrapper {
+    @include center;
+  }
+
+  .clients__img-wrapper--microsoft {
+    width: 260px;
+    height: 120px;
+    background-color: #302d2d;
+  }
+
+  .clients__img-wrapper--twitter {
+    width: 120px;
+    height: 120px;
+    background-color: #00aced;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  .clients__img-wrapper--apple {
+    width: 120px;
+    height: 120px;
+    background-color: #a6b1b7;
+
+    img {
+      width: 45%;
+    }
+  }
+
+  .clients__img-wrapper--behance {
+    width: 260px;
+    height: 260px;
+    background-color: #1377ff;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .clients__img-wrapper--evernote {
+    width: 260px;
+    height: 120px;
+    background-color: #7ac143;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .clients__img-wrapper--google {
+    width: 260px;
+    height: 120px;
+    background-color: #dd5440;
+
+    img {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .clients {
+    .clients__item {
+      &:nth-child(3) {
+        flex-basis: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .clients {
+    padding: 100px 100px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    .clients__list {
+      @include border(blue);
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      width: 840px;
+      height: 470px;
+    }
+
+    .clients__item {
+      position: absolute;
+      margin: 0;
+
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+
+      &:nth-child(2) {
+        top: 150px;
+        left: 0;
+        width: 260px;
+        height: 260px;
+        position: relative;
+      }
+
+      &:nth-child(3) {
+        top: 60px;
+        left: 290px;
+      }
+
+      &:nth-child(4) {
+        top: 140px;
+        left: 580px;
+      }
+
+      &:nth-child(5) {
+        top: 350px;
+        left: 420px;
+      }
+    }
+
+    .clients__img-wrapper--apple {
+      position: absolute;
+      top: 135px;
+      left: 140px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .clients {
+    padding: 150px 225px;
   }
 }

@@ -62,14 +62,8 @@
   border: 1px solid $color;
 }
 
-@mixin long-dash($width: 80px) {
-  @include pseudo;
-  width: $width;
-  border-top: 1px solid black;
-}
-
-@mixin short-dash($width: 25px) {
-  @include pseudo;
-  width: $width;
-  border-top: 2px solid $woody;
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
