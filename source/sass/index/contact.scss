@@ -1,4 +1,20 @@
 .contact {
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
   padding: 20px 30px;
   background-color: $lightgray;
+}
+
+.contact__title-top {
+  margin-left: -40px;
+
+  &::after {
+    width: 40px;
+    right: 1px;
+  }
+}
+
+.contact__title-part {
+  margin-left: 35px;
 }

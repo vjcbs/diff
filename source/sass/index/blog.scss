@@ -1,66 +1,82 @@
 .blog {
   // @include border;
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
   padding: 20px 30px;
+}
 
-  .blog__posts {
-    @include flex-column;
-    justify-content: center;
-    align-items: center;
-  }
+.blog__title-top {
+  margin-left: -40px;
 
-  .blog__post {
-    margin-bottom: 30px;
+  &::after {
+    right: 2px;
+    width: 53px;
   }
+}
 
-  .blog__post-title {
-    text-transform: uppercase;
-  }
+.blog__title-part {
+  margin-left: 47px;
+}
 
-  .blog__post-img-wrapper {
-    width: 100%;
-  }
+.blog__posts {
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .blog__post-img {
-    max-width: 100%;
-  }
+.blog__post {
+  margin-bottom: 30px;
+}
 
-  .blog__more-link {
-    // @include border;
-  }
+.blog__post-title {
+  text-transform: uppercase;
+}
+
+.blog__post-img-wrapper {
+  width: 100%;
+}
+
+.blog__post-img {
+  max-width: 100%;
+}
+
+.blog__more-link {
+  // @include border;
 }
 
 @media (min-width: 768px) {
   .blog {
     padding: 50px 100px;
+  }
 
-    .blog__post {
-      @include flex-row;
+  .blog__post {
+    @include flex-row;
+  }
+
+  .blog__post-body {
+    padding: 20px;
+  }
+
+  .blog__post-body {
+    flex-basis: 35%;
+  }
+
+  .blog__post--horizontal-img {
+    .blog__post-img-wrapper {
+      @include border(red);
+      flex-basis: 60%;
     }
+  }
 
-    .blog__post-body {
-      padding: 20px;
+  .blog__post--vertical-img {
+    .blog__post-img-wrapper {
+      margin-left: 33.333%;
+      flex-basis: 35%;
     }
 
     .blog__post-body {
       flex-basis: 35%;
-    }
-
-    .blog__post--horizontal-img {
-      .blog__post-img-wrapper {
-        @include border(red);
-        flex-basis: 60%;
-      }
-    }
-
-    .blog__post--vertical-img {
-      .blog__post-img-wrapper {
-        margin-left: 33.333%;
-        flex-basis: 35%;
-      }
-
-      .blog__post-body {
-        flex-basis: 35%;
-      }
     }
   }
 }
@@ -68,10 +84,10 @@
 @media (min-width: 1250px) {
   .blog {
     padding: 150px 225px;
+  }
 
-    .blog__posts {
-      max-width: 1024px;
-      margin: 0 auto;
-    }
+  .blog__posts {
+    max-width: 1024px;
+    margin: 0 auto;
   }
 }

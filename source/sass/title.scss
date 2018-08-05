@@ -1,19 +1,30 @@
 .title {
   // @include border;
-  // @include font($name: $bold-font, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
-  margin-bottom: 50px;
+  display: inline-block;
+  @include font($name: $bold-font, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
+  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
+}
 
-  .title__top {
-    margin: 0;
-    // font: inherit;
-    @include font($name: $bold-font, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
-  }
+.title__top {
+  position: relative;
+  margin: 0;
+  font: inherit;
 
-  .title__part {
-    // font: inherit;
-    @include font($name: $extrabold, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
-    font-weight: 700;
+  &::after {
+    @include pseudo;
+    top: 50%;
+    right: 0;
+    width: 85px;
+    border-top: 3px solid $black;
+    transform: translateY(-50%);
   }
+}
+
+.title__part {
+  font: inherit;
+  // @include font($name: $bold-font, $size: $h2-sz * 0.6, $color: $black, $lh: 28px);
+  // font-weight: 700;
+  // margin-left: 93px;
 }
