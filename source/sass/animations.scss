@@ -30,7 +30,7 @@
 	}
 }
 
-@keyframes rotation {
+@keyframes spin-forward {
 	0% {
 		transform: none;
 	}
@@ -40,7 +40,32 @@
 	}
 }
 
+@keyframes spin-backward {
+	0% {
+		transform: none;
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
 .animated {
 	animation: skew-bird 4s ease-out 1;
 	animation-play-state: running;
+}
+
+.spin-forward {
+	transform-origin: center;
+	animation: spin-forward 2.5s linear infinite;
+}
+
+.spin-backward {
+	transform-origin: center;
+	animation: spin-backward 2.5s linear infinite;
+}
+
+.rotate {
+	transition-duration: 600ms;
+	transform: rotate(180deg);
 }

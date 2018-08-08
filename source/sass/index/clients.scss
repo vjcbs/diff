@@ -17,6 +17,7 @@
 
 .clients__title-part {
   margin-left: 50px;
+  user-select: none;
 }
 
 .clients__list {
@@ -28,7 +29,7 @@
 }
 
 .clients__gallery {
-  @include border(tomato);
+  // @include border(tomato);
   width: 100%;
 }
 
@@ -46,6 +47,17 @@
 
 .clients__img-wrapper {
   @include center;
+  cursor: pointer;
+  transition-duration: 500ms;
+
+  &:hover {
+    opacity: 0.8;
+    // transform: scale(1.1);
+  }
+
+  &:active {
+
+  }
 }
 
 .clients__img-wrapper--microsoft {
@@ -125,7 +137,7 @@
   }
 
   .clients__list {
-    @include border(blue);
+    // @include border(blue);
     position: relative;
     display: block;
     margin: 0 auto;
@@ -176,5 +188,18 @@
 @media (min-width: 1250px) {
   .clients {
     padding: 150px 225px;
+  }
+
+  .clients__title-top {
+    margin-left: -85px;
+
+    &::after {
+      right: 2px;
+      width: 120px;
+    }
+  }
+
+  .clients__title-part {
+    margin-left: 85px;
   }
 }

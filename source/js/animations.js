@@ -11,6 +11,22 @@ $(document).ready( function() {
 		})
 	})
 
+  $('#lineSVG').on('click', function(){
+    if ($(this).css('animation-direction') === 'normal') {
+      $(this).css('animation-direction', 'reverse');
+    } else {
+      $(this).css('animation-direction', 'normal');
+    }
+
+    // if ($(this).hasClass('spin-forward')) {
+    //   $(this).removeClass('spin-forward');
+    //   $(this).addClass('spin-backward');
+    // } else {
+    //   $(this).removeClass('spin-backward');
+    //   $(this).addClass('spin-forward');
+    // }
+  })
+
   createWaves('.works__img');
   f(5);
 

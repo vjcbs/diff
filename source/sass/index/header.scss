@@ -61,6 +61,7 @@
   font-family: $extrabold, sans-serif;
   font-weight: 700;
   margin-left: 74px;
+  user-select: none;
 
   &::before {
     @include pseudo;
@@ -95,11 +96,30 @@
 
 .header__nav-link {
   @include reset-link;
+  position: relative;
   font-family: $semibold, sans-serif;
   color: white;
   text-transform: uppercase;
   // text-align: center;
   // @include border(yellow);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -1px;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
 }
 
 @media (min-width: 480px), (orientation: landscape) {

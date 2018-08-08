@@ -13,15 +13,8 @@ body {
   @include font($size: 16px);
 }
 
-.wrapper {
-  position: relative;
-  max-width: 1680px;
-  margin: 0 auto;
-  overflow-x: hidden;
-
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    overflow-x: hidden;
-  }
+h1, h2 {
+  user-select: none;
 }
 
 .visually-hidden {

@@ -17,4 +17,97 @@
 
 .contact__title-part {
   margin-left: 35px;
+  user-select: none;
+}
+
+.contact__info {
+  padding-right: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact__subtitle {
+  @include reset-mp;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contact__text {
+  font-size: 14px;
+}
+
+.contact__map-img {
+  max-width: 100%;
+}
+
+.contact__link {
+  @include reset-link;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .contact__subtitle {
+    font-size: 19px;
+  }
+
+  .contact__text {
+    font-size: 16px;
+  }
+
+  .contact__link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contact {
+    padding: 150px 225px;
+  }
+
+  .contact__title-top {
+    margin-left: -58px;
+
+    &::after {
+      width: 70px;
+      right: 2px;
+    }
+  }
+
+  .contact__title-part {
+    margin-left: 70px;
+  }
+
+  .contact__body {
+    @include flex-row;
+    // @include border;
+  }
+
+  .contact__info {
+    @include flex-column;
+    text-align: left;
+    // @include border(red);
+  }
+
+  .contact__info .social {
+    margin-top: auto;
+  }
+
+  .contact__subtitle {
+    font-size: 22px;
+  }
+
+  .contact__text {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .contact__link {
+    font-size: 20px;
+  }
+
 }

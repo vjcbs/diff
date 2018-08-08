@@ -1,0 +1,52 @@
+.footer {
+  @include flex-column;
+  @include font($name: $regular-font, $size: 12px);
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  padding: 20px 30px 5px 30px;
+  color: #ffffff;
+  background: url("../img/img-footer-bg.jpg") no-repeat;
+  background-position: center;
+}
+
+.footer__logo {
+  height: 50px;
+  width: 50px;
+}
+
+.footer__logo-img {
+  max-width: 100%;
+}
+
+.footer__link {
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .footer__logo {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .footer {
+    height: 350px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 19px;
+  }
+
+  .footer__logo {
+    height: 80px;
+    width: 80px;
+  }
+}

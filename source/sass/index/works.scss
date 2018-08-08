@@ -6,9 +6,7 @@
 }
 
 .works__title {
-  // margin: 0;
-  // margin-bottom: 20px;
-  // text-align: center;
+  // margin-bottom: 30px;
 }
 
 .works__title-top {
@@ -22,6 +20,11 @@
 
 .works__title-part {
   margin-left: 80px;
+  user-select: none;
+}
+
+.works__gallery {
+  margin-bottom: 20px;
 }
 
 .works__svg {
@@ -36,9 +39,19 @@
   align-items: center;
 }
 
+.works__item {
+  margin-bottom: 20px;
+}
+
 .works__img-wrapper {
   // max-width: 100%;
   width: 100%;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .works__img {
@@ -62,14 +75,24 @@
 }
 
 .works__more-link {
+  position: relative;
   display: inline-block;
   margin: 0 auto;
-  @include border;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  // &:hover {
+  //   opacity: 0.8;
+  // }
 }
 
 @media (min-width: 768px) {
   .works {
     padding: 30px 50px;
+  }
+
+  .works__gallery {
+    margin-bottom: 35px;
   }
 
   .works__list {
@@ -104,7 +127,20 @@
     padding: 150px 225px;
     margin: 0 auto;
     max-width: 1600px;
-    @include border;
+    // @include border;
+  }
+
+  .works__title-top {
+    margin-left: -110px;
+
+    &::after {
+      width: 135px;
+    }
+  }
+
+  .works__title-part {
+    margin-left: 120px;
+    // margin-left: 80px;
   }
 
   .works__gallery {
@@ -112,6 +148,7 @@
     position: relative;
     width: 100%;
     max-width: 1200px;
+    margin-bottom: 50px;
     background-color: #bcbcbc;
   }
 
@@ -129,14 +166,18 @@
     top: 54%;
     left: 12%;
     // @include border;
-    transform-origin: center;
-    animation: rotation 2.5s linear infinite;
+    // transform-origin: center;
+    animation: spin-forward 2.5s linear infinite normal;
   }
 
   #birdSVG {
     top: 32%;
     right: 70px;
+
     // @include border;
+    .bird {
+      transform-origin: 100px 70px;
+    }
   }
 
   #lines {
@@ -155,7 +196,7 @@
   .works__img-wrapper {
     position: relative;
     display: block;
-    @include border;
+    // @include border;
   }
 
   .works__img-desc {
@@ -180,7 +221,7 @@
 
   .works__item {
     @include flex-row;
-    @include border(gold);
+    // @include border(gold);
 
     &:nth-child(1) {
       // @include border(red);

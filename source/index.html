@@ -9,19 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- <div class="container">
-  <svg width="150" height="75">
-    <g id="waves">
-      <path class="wave" id="wave1" fill="none" stroke="#7AA20D" stroke-width="2">
-      </path>
-      <path class="wave" id="wave2" fill="none" stroke="#7AA20D" stroke-width="2">
-      </path>
-      <path class="wave" id="wave3" fill="none" stroke="#7AA20D" stroke-width="2">
-      </path>
-    </g>
-  </svg>
-
-  </div> -->
   <header class="header">
     <div class="header__background"></div>
     <div class="header__brand">
@@ -35,42 +22,42 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">About</a>
+            <a class="header__nav-link" href="#About">About</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Work</a>
+            <a class="header__nav-link" href="#Works">Work</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Blog</a>
+            <a class="header__nav-link" href="#Blog">Blog</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Contact</a>
+            <a class="header__nav-link" href="#Contact">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="social">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">TW</span></a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#"><span class="social__icon social__icon--tw"></span></a>
         </li>
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">FB</span></a>
+        <li class="social__item">
+          <a class="social__link" href="#"><span class="social__icon social__icon--fb"></span></a>
         </li>
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">IG</span></a>
+        <li class="social__item">
+          <a class="social__link" href="#" href="#"><span class="social__icon social__icon--in"></span></a>
         </li>
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">VIM</span></a>
+        <li class="social__item">
+          <a class="social__link" href="#" href="#"><span class="social__icon social__icon--vm"></span></a>
         </li>
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">BE</span></a>
+        <li class="social__item">
+          <a class="social__link" href="#" href="#"><span class="social__icon social__icon--be"></span></a>
         </li>
       </ul>
     </div>
   </header>
 
-  <section class="about">
+  <section class="about" id="About">
     <h2 class="about__title">Hey!</h2>
     <div class="about__content">
       <div class="about__img-wrapper">
@@ -84,13 +71,13 @@
     </div>
   </section>
 
-  <section class="works">
+  <section class="works" id="Works">
     <div class="title works__title">
       <h2 class="title__top works__title-top">Check <span class="visually-hidden">this out!</span></h2>
       <span class="title__part works__title-part">This out!</span>
     </div>
     <div class="works__gallery">
-      <svg class="works__svg" id="wavesSVG" width="150" height="75">
+      <svg class="works__svg" id="wavesSVG" width="142" height="75">
         <g id="waves">
           <path class="wave" id="wave1" fill="none" stroke="#7AA20D" stroke-width="2">
           </path>
@@ -105,7 +92,7 @@
           <line x1="0" y1="0" x2="80" y2="80" stroke="#222222" stroke-width="3"/>
         </g>
       </svg>
-      <svg class="works__svg" id="birdSVG" width="180" height="200">
+      <svg class="works__svg" id="birdSVG" width="200" height="150">
     		<g class="bird">
     			<polyline id="line1" points="50,50 100,50 150,50" fill="none" stroke="#222222" stroke-width="3">
     				<animate id="forward1"  begin="0;back1.end" attributeName="points" dur="2s" values="50,40 100,50 150,40; 50,90 100,50 150,90" calcMode="spline" keySplines=".34,.08,.17,1.25" />
@@ -169,7 +156,7 @@
         </li>
       </ul>
     </div>
-    <a class="works__more-link">More</a>
+    <a class="works__more-link animated-underline animated-underline--black">More</a>
   </section>
 
   <section class="clients">
@@ -211,7 +198,7 @@
     </div>
   </section>
 
-  <section class="blog">
+  <section class="blog" id="Blog">
     <div class="title blog__title">
       <h2 class="title__top blog__title-top">The <span class="visually-hidden">blog!</span></h2>
       <span class="title__part blog__title-part">Blog!</span>
@@ -230,7 +217,7 @@
             incididunt ut labore et dolore texercaitation ullamco laboris nisi
             ut aliquip ex ea commodo consequat.
           </p>
-          <a class="blog__post-link">Open Post</a>
+          <a class="blog__post-link animated-underline animated-underline--black">Open Post</a>
         </div>
       </article>
       <article class="blog__post blog__post--vertical-img">
@@ -245,14 +232,40 @@
             incididunt ut labore et dolore texercaitation ullamco laboris nisi
             ut aliquip ex ea commodo consequat.
           </p>
-          <a class="blog__post-link">Open Post</a>
+          <a class="blog__post-link animated-underline animated-underline--black">Open Post</a>
         </div>
       </article>
-      <a class="blog__more-link">Check more posts</a>
+      <svg class="z">
+  <polyline class="zigzag" points="50,50 70,35 90,50 110,35 130,50 150,35 170,50 190,35 210,50 230,35 250,50" fill="none" stroke="#222222" stroke-width="3">
+
+    <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50; 0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50" calcMode="spline" keySplines=".69,.16,.78,.66"/>
+
+          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50; 100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+
+  </polyline>
+
+  <polyline points="50,60 70,45 90,60 110,45 130,60 150,45 170,60 190,45 210,60 230,45 250,60" fill="none" stroke="#222222" stroke-width="3">
+
+        <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60; 0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60" calcMode="spline" keySplines=".69,.16,.78,.66"/>
+
+              <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60; 100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+
+  </polyline>
+
+  <polyline points="50,70 70,55 90,70 110,55 130,70 150,55 170,70 190,55 210,70 230,55 250,70" fill="none" stroke="#222222" stroke-width="3">
+
+    <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70; 0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70" calcMode="spline" keySplines=".69,.16,.78,.66"/>
+
+              <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70; 100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+
+    </polyline>
+
+</svg>
+      <a class="blog__more-link animated-underline animated-underline--black">Check more posts</a>
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="Contact">
     <div class="title contact__title">
       <h2 class="title__top contact__title-top">Get in <span class="visually-hidden">touch!</span></h2>
       <span class="title__part contact__title-part">Touch!</span>
@@ -262,38 +275,42 @@
       <div class="contact__info">
         <h3 class="contact__subtitle">Our location</h3>
         <p class="contact__text">
-
+          123 Different Street<br/>
+          Lisbon, Portugal 1200 - 000<br/>
+          (+351) 123 456 789<br/>
+          Tiago Narciso
         </p>
-        <a class="contact__link">Say hello!</a>
+        <a class="contact__link" href="#">Say hello!</a>
+        <div class="social social--black-icons">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#"><span class="social__icon social__icon--tw"></span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"><span class="social__icon social__icon--fb"></span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"><span class="social__icon social__icon--in"></span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"><span class="social__icon social__icon--vm"></span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"><span class="social__icon social__icon--be"></span></a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="contact__map" id="map">
-
+        <img class="contact__map-img" src="img/img-map.jpg" alt="map"/>
       </div>
     </div>
-    <div class="social">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">TW</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">FB</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">IG</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">VIM</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-link"><span class="social-icon">BE</span></a>
-        </li>
-      </ul>
-    </div>
+
   </section>
 
   <footer class="footer">
     <div class="footer__logo">
-      <img class="footer__logo-img" src="http://via.placeholder.com/80x80"/>
+      <img class="footer__logo-img" src="img/ic-footer-logo.png" />
     </div>
     <a class="footer__link">www.tiagonarciso.com</a>
     <span class="footer__copyright">©2015 Tiago Narciso</span>
@@ -304,6 +321,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
+  <script src="js/script.js"></script>
   <script src="js/test.js"></script>
   <script src="js/figures.js"></script>
   <script src="js/animations.js"></script>

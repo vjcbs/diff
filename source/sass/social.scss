@@ -1,14 +1,57 @@
-.social {
-  color: white;
+.social__list {
+  @include reset-list;
+  @include flex-row;
+  justify-content: center;
+}
 
-  .social-list {
-    @include reset-list;
-    @include flex-row;
+.social__item {
+  margin: 7px;
+}
+
+.social__link {
+  cursor: pointer;
+}
+
+.social__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/sprite-social-white.png");
+  background-repeat: no-repeat;
+}
+
+.social--black-icons {
+  .social__icon {
+    background-image: url("../img/sprite-social-black.png");
+  }
+}
+
+.social__icon--tw {
+  background-position: 0 0;
+}
+
+.social__icon--fb {
+  background-position: -50px 2px;
+}
+
+.social__icon--in {
+  background-position: -97px 1px;
+}
+
+.social__icon--vm {
+  background-position: -145px 1px;
+}
+
+.social__icon--be {
+  background-position: -195px 1px;
+}
+
+@media (min-width: 480px) {
+  .social__list {
     justify-content: flex-start;
-    margin: 0 auto;
   }
 
-  .social-item {
-    margin: 5px;
+  .contact .social__list {
+    justify-content: center;
   }
 }

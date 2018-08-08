@@ -35,6 +35,7 @@
 }
 
 .about__text {
+  font-size: $about-text-sz * 0.6;
   text-align: center;
 }
 
@@ -45,6 +46,12 @@
 
   .about__title {
     font-size: $h2-sz * 0.8;
+    margin-bottom: 35px;
+
+    &::before {
+      left: -67px;
+      width: 65px;
+    }
   }
 
   .about__content {
@@ -61,7 +68,9 @@
   .about__text {
     flex-basis: 50%;
     padding: 10px;
-    // margin-right: 50px;
+    font-size: $about-text-sz * 0.8;
+    text-align: left;
+    margin-left: 30px;
   }
 }
 
@@ -74,5 +83,24 @@
 
   .about__content {
     max-width: 1024px;
+  }
+
+  .about__title {
+    margin-bottom: 75px;
+    font-size: $h2-sz;
+
+    &::before {
+      left: -87px;
+      width: 85px;
+      border-width: 4px;
+    }
+  }
+
+  .about__text {
+    margin-top: 50px;
+    margin-left: 0;
+    font-size: $about-text-sz;
+    line-height: 33px;
+    transform: translateX(-75px);
   }
 }
