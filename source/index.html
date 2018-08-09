@@ -88,9 +88,7 @@
         </g>
       </svg>
       <svg class="works__svg" id="lineSVG" width="80" height="80">
-        <g id="line">
-          <line x1="0" y1="0" x2="80" y2="80" stroke="#222222" stroke-width="3"/>
-        </g>
+        <use xlink:href="img/sprite-svg.svg#line"></use>
       </svg>
       <svg class="works__svg" id="birdSVG" width="200" height="150">
     		<g class="bird">
@@ -236,31 +234,33 @@
         </div>
       </article>
       <svg class="z">
-  <polyline class="zigzag" points="50,50 70,35 90,50 110,35 130,50 150,35 170,50 190,35 210,50 230,35 250,50" fill="none" stroke="#222222" stroke-width="3">
-
-    <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50; 0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50" calcMode="spline" keySplines=".69,.16,.78,.66"/>
-
-          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50; 100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
-
-  </polyline>
-
-  <polyline points="50,60 70,45 90,60 110,45 130,60 150,45 170,60 190,45 210,60 230,45 250,60" fill="none" stroke="#222222" stroke-width="3">
-
-        <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60; 0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60" calcMode="spline" keySplines=".69,.16,.78,.66"/>
-
-              <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60; 100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
-
-  </polyline>
-
-  <polyline points="50,70 70,55 90,70 110,55 130,70 150,55 170,70 190,55 210,70 230,55 250,70" fill="none" stroke="#222222" stroke-width="3">
-
-    <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70; 0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70" calcMode="spline" keySplines=".69,.16,.78,.66"/>
-
-              <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70; 100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
-
-    </polyline>
-
-</svg>
+        <polyline class="zigzag"
+        points="50,50 70,35 90,50 110,35 130,50 150,35 170,50 190,35 210,50 230,35 250,50"
+        fill="none" stroke="#222222" stroke-width="3">
+          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end"
+          values="100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50; 0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50"
+          calcMode="spline" keySplines=".69,.16,.78,.66"/>
+          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end"
+          values="0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50; 100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50"
+          calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+        </polyline>
+        <polyline points="50,60 70,45 90,60 110,45 130,60 150,45 170,60 190,45 210,60 230,45 250,60" fill="none" stroke="#222222" stroke-width="3">
+          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end"
+          values="100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60; 0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60"
+          calcMode="spline" keySplines=".69,.16,.78,.66"/>
+          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end"
+          values="0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60; 100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60"
+          calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+        </polyline>
+        <polyline points="50,70 70,55 90,70 110,55 130,70 150,55 170,70 190,55 210,70 230,55 250,70" fill="none" stroke="#222222" stroke-width="3">
+          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end"
+          values="100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70; 0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70"
+          calcMode="spline" keySplines=".69,.16,.78,.66"/>
+          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end"
+          values="0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70; 100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70"
+          calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+        </polyline>
+      </svg>
       <a class="blog__more-link animated-underline animated-underline--black">Check more posts</a>
     </div>
   </section>
@@ -312,7 +312,7 @@
     <div class="footer__logo">
       <img class="footer__logo-img" src="img/ic-footer-logo.png" />
     </div>
-    <a class="footer__link">www.tiagonarciso.com</a>
+    <a class="footer__link" href="http://www.tiagonarciso.com">www.tiagonarciso.com</a>
     <span class="footer__copyright">©2015 Tiago Narciso</span>
   </footer>
 
@@ -321,10 +321,9 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
-  <script src="js/script.js"></script>
-  <script src="js/test.js"></script>
-  <script src="js/figures.js"></script>
-  <script src="js/animations.js"></script>
+  <script src="js/waves.js"></script>
+  <script src="js/works.js"></script>
+  <script src="js/clients.js"></script>
 
 </body>
 </html>

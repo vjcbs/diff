@@ -1,6 +1,4 @@
 $(document).ready( function() {
-  // console.log('Document is ready');
-  // let img = $('.about__img')
 
   let animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
 
@@ -17,18 +15,7 @@ $(document).ready( function() {
     } else {
       $(this).css('animation-direction', 'normal');
     }
-
-    // if ($(this).hasClass('spin-forward')) {
-    //   $(this).removeClass('spin-forward');
-    //   $(this).addClass('spin-backward');
-    // } else {
-    //   $(this).removeClass('spin-backward');
-    //   $(this).addClass('spin-forward');
-    // }
   })
-
-  createWaves('.works__img');
-  f(5);
 
   $('.works__img').click(function() {
     console.log('clicked!');

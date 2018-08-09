@@ -28,7 +28,7 @@ $(document).ready(function(){
 	};
 
 	function changeY(s, n) {
-		return s.replace(re, s => ',' + (Number.parseInt(s.substring(1))+n));
+		return s.replace(/,\d+/g, s => ',' + (Number.parseInt(s.substring(1))+n));
 	}
 
 	$('.wave').attr({
@@ -36,17 +36,6 @@ $(document).ready(function(){
 			'stroke':'#222222',
 			'stroke-width':'3',
 		});
-
-	// Generate data for three waves
-	// let data1 = generateData(startingPoint, 6, 20);
-	// let data2 = changeY(data1, 6);
-	// let data3 = changeY(data1, -6);
-	//
-	// $('#wave1').attr('d', data1);
-	// $('#wave2').attr('d', data2);
-	// $('#wave3').attr('d', data3);
-
-	// let wave2 = $('#wave2');
 
 	function changeDir(direction) {
 		if (direction == 'forward') return 'backward';
@@ -84,17 +73,14 @@ $(document).ready(function(){
 		$('#wave3').attr('d', data3);
 
 		if (direction == 'forward') {
-			// console.log(n);
 			n--;
 			if (n > -A) setTimeout(animate, 25*Math.sqrt(Math.abs(n)), n, direction);
 		} else {
-			// console.log(n);
 			n++;
 			if (n < A) setTimeout(animate, 50*Math.sqrt(Math.abs(n)), n, direction);
 		}
 
 		if (Math.abs(n) == A) {
-			// console.log(direction + ', n=' + n);
 			setTimeout(animate, 50, n, changeDir(direction));
 		}
 	};

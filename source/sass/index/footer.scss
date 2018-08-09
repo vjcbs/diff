@@ -20,7 +20,9 @@
 }
 
 .footer__link {
+  @include reset-link;
   margin-top: auto;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
