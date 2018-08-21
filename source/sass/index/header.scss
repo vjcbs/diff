@@ -25,6 +25,7 @@
   height: 70px;
   width: 70px;
   // margin: 0 auto;
+  margin: 0 auto;
   margin-bottom: 50px;
   margin-bottom: 10vh;
   background: url("../img/ic-header-logo.png") no-repeat;
@@ -123,8 +124,9 @@
 }
 
 @media (min-width: 480px), (orientation: landscape) {
-  .header {
-
+  .header__brand {
+    margin-left: 0;
+    margin-right: 0;
   }
   .header__jumbo {
     @include flex-row;

@@ -55,14 +55,14 @@ $(document).ready(function(){
 		}
 	}
 
-	function generateLinePoints(start, middle, end) {
-		let points = start.x + ',' + start.y + ' ' + middle.x + ',' + middle.y + ' ' + end.x + ',' + end.y;
-		return points;
-	}
-
-	let start = new Point(0,5);
-	let middle = new Point(90,5);
-	let end = new Point(180,5);
+	// function generateLinePoints(start, middle, end) {
+	// 	let points = start.x + ',' + start.y + ' ' + middle.x + ',' + middle.y + ' ' + end.x + ',' + end.y;
+	// 	return points;
+	// }
+	//
+	// let start = new Point(0,5);
+	// let middle = new Point(90,5);
+	// let end = new Point(180,5);
 
 	function animate(n, direction = 'forward') {
 		let data = generateData(startingPoint, n, 40);

@@ -18,14 +18,13 @@ $(document).ready( function() {
   })
 
   $('.works__img').click(function() {
-    console.log('clicked!');
     $(this).animate({
       opacity: 0.25,
     }, 500, function(){
       $(this).animate({
         opacity: 1,
       }, 500, function(){
-        console.log('Complete!');
+        
       });
     });
   });
