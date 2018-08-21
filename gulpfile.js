@@ -93,7 +93,7 @@ gulp.task("build", function(done) {
     "clean",
     "copy",
     "style_build",
-    "html",
+    // "html",
     // "images",
     done
   );

@@ -45,13 +45,13 @@
           <a class="social__link" href="#"><span class="social__icon social__icon--fb"></span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#"><span class="social__icon social__icon--in"></span></a>
+          <a class="social__link" href="#" href="#"><span class="social__icon social__icon--in"></span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#"><span class="social__icon social__icon--vm"></span></a>
+          <a class="social__link" href="#" href="#"><span class="social__icon social__icon--vm"></span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#"><span class="social__icon social__icon--be"></span></a>
+          <a class="social__link" href="#" href="#"><span class="social__icon social__icon--be"></span></a>
         </li>
       </ul>
     </div>
@@ -61,7 +61,7 @@
     <h2 class="about__title">Hey!</h2>
     <div class="about__content">
       <div class="about__img-wrapper">
-        <img class="about__img" src="img/img-about.jpg">
+        <img class="about__img" src="img/img-about.jpg" />
       </div>
       <p class="about__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -79,12 +79,12 @@
     <div class="works__gallery">
       <svg class="works__svg" id="wavesSVG" width="142" height="75">
         <g id="waves">
-          <path class="wave" id="wave1" fill="none" stroke="#7AA20D" stroke-width="2"></path>
-          
-          <path class="wave" id="wave2" fill="none" stroke="#7AA20D" stroke-width="2"></path>
-          
-          <path class="wave" id="wave3" fill="none" stroke="#7AA20D" stroke-width="2"></path>
-          
+          <path class="wave" id="wave1" fill="none" stroke="#7AA20D" stroke-width="2">
+          </path>
+          <path class="wave" id="wave2" fill="none" stroke="#7AA20D" stroke-width="2">
+          </path>
+          <path class="wave" id="wave3" fill="none" stroke="#7AA20D" stroke-width="2">
+          </path>
         </g>
       </svg>
       <svg class="works__svg" id="lineSVG" width="80" height="80">
@@ -92,24 +92,24 @@
       </svg>
       <svg class="works__svg" id="birdSVG" width="200" height="150">
     		<g class="bird">
-    			<polyline id="line1" points="50,50 100,50 150,50" fill="none" stroke="#222222" stroke-width="3"></polyline>
-    				<animate id="forward1" begin="0;back1.end" attributeName="points" dur="2s" values="50,40 100,50 150,40; 50,90 100,50 150,90" calcMode="spline" keySplines=".34,.08,.17,1.25">
-    				<animate id="back1" attributeName="points" dur="2s" begin="forward1.end" values="50,90 100,50 150,90; 50,40 100,50 150,40" calcMode="spline" keySplines=".32,.49,.73,1.14">
-    			
-    			<polyline id="line2" points="50,70 100,70 150,70" fill="none" stroke="#222222" stroke-width="3"></polyline>
-    				<animate id="forward2" begin="0;back2.end" attributeName="points" dur="2s" values="50,60 100,70 150,60;50,110 100,70 150,110" calcMode="spline" keySplines=".34,.08,.17,1.25">
-    				<animate id="back2" attributeName="points" dur="2s" begin="forward1.end" from="50,100 100,70 150,100" to="50,60 100,70 150,60" values="50,110 100,70 150,110; 50,60 100,70 150,60" calcMode="spline" keySplines=".32,.49,.73,1.14">
-    			
-    			<polyline id="line3" points="50,90 100,90 150,90" fill="none" stroke="#222222" stroke-width="3"></polyline>
-    				<animate id="forward3" begin="0;back3.end" attributeName="points" dur="2s" values="50,80 100,90 150,80;50,130 100,90 150,130" calcMode="spline" keySplines=".34,.08,.17,1.25">
-    				<animate id="back3" attributeName="points" dur="2s" begin="forward2.end" values="50,130 100,90 150,130; 50,80 100,90 150,80" calcMode="spline" keySplines=".32,.49,.73,1.14">
-    			
-    		</animate></animate></animate></animate></animate></animate></g>
+    			<polyline id="line1" points="50,50 100,50 150,50" fill="none" stroke="#222222" stroke-width="3">
+    				<animate id="forward1"  begin="0;back1.end" attributeName="points" dur="2s" values="50,40 100,50 150,40; 50,90 100,50 150,90" calcMode="spline" keySplines=".34,.08,.17,1.25" />
+    				<animate id="back1" attributeName="points" dur="2s" begin="forward1.end" values="50,90 100,50 150,90; 50,40 100,50 150,40" calcMode="spline" keySplines=".32,.49,.73,1.14" />
+    			</polyline>
+    			<polyline id="line2" points="50,70 100,70 150,70" fill="none" stroke="#222222" stroke-width="3">
+    				<animate id="forward2"  begin="0;back2.end" attributeName="points" dur="2s" values="50,60 100,70 150,60;50,110 100,70 150,110" calcMode="spline" keySplines=".34,.08,.17,1.25"/>
+    				<animate id="back2" attributeName="points" dur="2s" begin="forward1.end" from="50,100 100,70 150,100" to="50,60 100,70 150,60" values="50,110 100,70 150,110; 50,60 100,70 150,60" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+    			</polyline>
+    			<polyline id="line3" points="50,90 100,90 150,90" fill="none" stroke="#222222" stroke-width="3">
+    				<animate id="forward3"  begin="0;back3.end" attributeName="points" dur="2s" values="50,80 100,90 150,80;50,130 100,90 150,130" calcMode="spline" keySplines=".34,.08,.17,1.25"/>
+    				<animate id="back3" attributeName="points" dur="2s" begin="forward2.end" values="50,130 100,90 150,130; 50,80 100,90 150,80" calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+    			</polyline>
+    		</g>
       </svg>
       <ul class="works__list">
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="img/img-heclem.png">
+            <img class="works__img" src="img/img-heclem.png" />
             <div class="works__img-desc">
               <span class="works__desc-name">Heclem Magazine</span>
               <span class="works__desc-type">EDITORIAL DESIGN</span>
@@ -118,7 +118,7 @@
         </li>
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="img/img-altj.png">
+            <img class="works__img" src="img/img-altj.png" />
             <div class="works__img-desc">
               <span class="works__desc-name">Alt-J Fall Tour</span>
               <span class="works__desc-type">GRAPHIC DESIGN</span>
@@ -127,7 +127,7 @@
         </li>
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="img/img-elegant.png">
+            <img class="works__img" src="img/img-elegant.png" />
             <div class="works__img-desc">
               <span class="works__desc-name">Elegant Theme</span>
               <span class="works__desc-type">WEB DESIGN</span>
@@ -136,7 +136,7 @@
         </li>
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="img/img-magazine.png">
+            <img class="works__img" src="img/img-magazine.png" />
             <div class="works__img-desc">
               <span class="works__desc-name">Magazine</span>
               <span class="works__desc-type">EDITORIAL DESIGN</span>
@@ -145,7 +145,7 @@
         </li>
         <li class="works__item">
           <div class="works__img-wrapper">
-            <img class="works__img" src="img/img-argo.png">
+            <img class="works__img" src="img/img-argo.png" />
             <div class="works__img-desc">
               <span class="works__desc-name">Argo</span>
               <span class="works__desc-type">BRANDING</span>
@@ -166,30 +166,30 @@
       <ul class="clients__list">
         <li class="clients__item">
           <div class="clients__img-wrapper clients__img-wrapper--microsoft">
-            <img class="clients__img" src="img/ic-microsoft.png">
+            <img class="clients__img" src="img/ic-microsoft.png" />
           </div>
         </li>
         <li class="clients__item">
           <div class="clients__img-wrapper clients__img-wrapper--twitter">
-            <img class="clients__img" src="img/ic-twitter.png">
+            <img class="clients__img" src="img/ic-twitter.png" />
           </div>
           <div class="clients__img-wrapper clients__img-wrapper--apple">
-            <img class="clients__img" src="img/ic-apple.png">
+            <img class="clients__img" src="img/ic-apple.png" />
           </div>
         </li>
         <li class="clients__item">
           <div class="clients__img-wrapper clients__img-wrapper--behance">
-            <img class="clients__img" src="img/ic-behance.png">
+            <img class="clients__img" src="img/ic-behance.png" />
           </div>
         </li>
         <li class="clients__item">
           <div class="clients__img-wrapper clients__img-wrapper--evernote">
-            <img class="clients__img" src="img/ic-evernote.png">
+            <img class="clients__img" src="img/ic-evernote.png" />
           </div>
         </li>
         <li class="clients__item">
           <div class="clients__img-wrapper clients__img-wrapper--google">
-            <img class="clients__img" src="img/ic-google.png">
+            <img class="clients__img" src="img/ic-google.png" />
           </div>
         </li>
       </ul>
@@ -205,7 +205,7 @@
     <div class="blog__posts">
       <article class="blog__post blog__post--horizontal-img">
         <div class="blog__post-img-wrapper">
-          <img class="blog__post-img" src="img/img-blog-1.jpg">
+          <img class="blog__post-img" src="img/img-blog-1.jpg" />
         </div>
         <div class="blog__post-body">
           <time class="blog__post-time" datetime="2018-07-07">7 July 2018</time>
@@ -220,7 +220,7 @@
       </article>
       <article class="blog__post blog__post--vertical-img">
         <div class="blog__post-img-wrapper">
-          <img class="blog__post-img" src="img/img-blog-2.jpg">
+          <img class="blog__post-img" src="img/img-blog-2.jpg" />
         </div>
         <div class="blog__post-body">
           <time class="blog__post-time" datetime="2018-07-07">4 June 2018</time>
@@ -234,19 +234,33 @@
         </div>
       </article>
       <svg class="z">
-        <polyline class="zigzag" points="50,50 70,35 90,50 110,35 130,50 150,35 170,50 190,35 210,50 230,35 250,50" fill="none" stroke="#222222" stroke-width="3"></polyline>
-          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50; 0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50" calcMode="spline" keySplines=".69,.16,.78,.66">
-          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50; 100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50" calcMode="spline" keySplines=".32,.49,.73,1.14">
-        
-        <polyline points="50,60 70,45 90,60 110,45 130,60 150,45 170,60 190,45 210,60 230,45 250,60" fill="none" stroke="#222222" stroke-width="3"></polyline>
-          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60; 0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60" calcMode="spline" keySplines=".69,.16,.78,.66">
-          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60; 100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60" calcMode="spline" keySplines=".32,.49,.73,1.14">
-        
-        <polyline points="50,70 70,55 90,70 110,55 130,70 150,55 170,70 190,55 210,70 230,55 250,70" fill="none" stroke="#222222" stroke-width="3"></polyline>
-          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end" values="100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70; 0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70" calcMode="spline" keySplines=".69,.16,.78,.66">
-          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end" values="0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70; 100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70" calcMode="spline" keySplines=".32,.49,.73,1.14">
-        
-      </animate></animate></animate></animate></animate></animate></svg>
+        <polyline class="zigzag"
+        points="50,50 70,35 90,50 110,35 130,50 150,35 170,50 190,35 210,50 230,35 250,50"
+        fill="none" stroke="#222222" stroke-width="3">
+          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end"
+          values="100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50; 0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50"
+          calcMode="spline" keySplines=".69,.16,.78,.66"/>
+          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end"
+          values="0,50 30,35 60,50 90,35 120,50 150,35 180,50 210,35 240,50 270,35 300,50; 100,50 110,35 120,50 130,35 140,50 150,35 160,50 170,35 180,50 190,35 200,50"
+          calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+        </polyline>
+        <polyline points="50,60 70,45 90,60 110,45 130,60 150,45 170,60 190,45 210,60 230,45 250,60" fill="none" stroke="#222222" stroke-width="3">
+          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end"
+          values="100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60; 0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60"
+          calcMode="spline" keySplines=".69,.16,.78,.66"/>
+          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end"
+          values="0,60 30,45 60,60 90,45 120,60 150,45 180,60 210,45 240,60 270,45 300,60; 100,60 110,45 120,60 130,45 140,60 150,45 160,60 170,45 180,60 190,45 200,60"
+          calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+        </polyline>
+        <polyline points="50,70 70,55 90,70 110,55 130,70 150,55 170,70 190,55 210,70 230,55 250,70" fill="none" stroke="#222222" stroke-width="3">
+          <animate id="stretch" attributeName="points" dur="2s" begin="0; shrink.end"
+          values="100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70; 0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70"
+          calcMode="spline" keySplines=".69,.16,.78,.66"/>
+          <animate id="shrink" attributeName="points" dur="2s" begin="stretch.end"
+          values="0,70 30,55 60,70 90,55 120,70 150,55 180,70 210,55 240,70 270,55 300,70; 100,70 110,55 120,70 130,55 140,70 150,55 160,70 170,55 180,70 190,55 200,70"
+          calcMode="spline" keySplines=".32,.49,.73,1.14"/>
+        </polyline>
+      </svg>
       <a class="blog__more-link animated-underline animated-underline--black">Check more posts</a>
     </div>
   </section>
@@ -261,9 +275,9 @@
       <div class="contact__info">
         <h3 class="contact__subtitle">Our location</h3>
         <p class="contact__text">
-          123 Different Street<br>
-          Lisbon, Portugal 1200 - 000<br>
-          (+351) 123 456 789<br>
+          123 Different Street<br/>
+          Lisbon, Portugal 1200 - 000<br/>
+          (+351) 123 456 789<br/>
           Tiago Narciso
         </p>
         <a class="contact__link" href="#">Say hello!</a>
@@ -288,7 +302,7 @@
         </div>
       </div>
       <div class="contact__map" id="map">
-        <img class="contact__map-img" src="img/img-map.jpg" alt="map">
+        <img class="contact__map-img" src="img/img-map.jpg" alt="map"/>
       </div>
     </div>
 
@@ -296,13 +310,16 @@
 
   <footer class="footer">
     <div class="footer__logo">
-      <img class="footer__logo-img" src="img/ic-footer-logo.png">
+      <img class="footer__logo-img" src="img/ic-footer-logo.png" />
     </div>
     <a class="footer__link" href="http://www.tiagonarciso.com">www.tiagonarciso.com</a>
     <span class="footer__copyright">©2015 Tiago Narciso</span>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
   <script src="js/waves.js"></script>
   <script src="js/works.js"></script>
