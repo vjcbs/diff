@@ -25,6 +25,16 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("style_build", function() {
+  gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+});
+
 gulp.task("html",function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([
@@ -68,7 +78,7 @@ gulp.task("clean", function (){
 
 gulp.task("copy", function() {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
+    "source/fonts/**/**",
     "source/img/**",
     "source/js/**",
     "source/*.html"
@@ -82,9 +92,9 @@ gulp.task("build", function(done) {
   run(
     "clean",
     "copy",
-    "style",
+    "style_build",
     "html",
-    "images",
+    // "images",
     done
   );
 });
